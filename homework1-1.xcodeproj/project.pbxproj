@@ -46,8 +46,6 @@
 		EB465355271BE3710087DD2F = {
 			isa = PBXGroup;
 			children = (
-				EB461B99271F6D300026CA04 /* Body.swift */,
-				EB461B96271F3B620026CA04 /* Tomb.swift */,
 				EB465360271BE3710087DD2F /* homework1-1 */,
 				EB46535F271BE3710087DD2F /* Products */,
 			);
@@ -64,6 +62,8 @@
 		EB465360271BE3710087DD2F /* homework1-1 */ = {
 			isa = PBXGroup;
 			children = (
+				EB461B99271F6D300026CA04 /* Body.swift */,
+				EB461B96271F3B620026CA04 /* Tomb.swift */,
 				EB465361271BE3720087DD2F /* homework1_1App.swift */,
 				EB465363271BE3720087DD2F /* ContentView.swift */,
 				EB465377271DFBC50087DD2F /* HuTao.swift */,
