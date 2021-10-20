@@ -49,11 +49,28 @@ struct TombView: View {
                 .position(x: positionX, y: positionY)
                 .rotationEffect(.degrees(rotationDegrees))
             
-            Photo1()
-                .stroke(Color(red: 0, green: 0, blue: 0), lineWidth: scale * 5)
+            //遺照的位置
+            Object1()
+                .fill(Color(red: 252 / 255, green: 224 / 255, blue: 203 / 255))
                 .frame(width: 296 * scale, height: 292 * scale)
                 .position(x: positionX, y: positionY)
                 .rotationEffect(.degrees(rotationDegrees))
+            
+            Photo1()
+                .stroke(Color(red: 0, green: 0, blue: 0), lineWidth: scale * 8)
+                .frame(width: 296 * scale, height: 292 * scale)
+                .position(x: positionX, y: positionY)
+                .rotationEffect(.degrees(rotationDegrees))
+        }
+    }
+}
+
+struct Object1: Shape{
+    func path(in rect: CGRect) -> Path {
+        Path{path in
+            path.addArc(center: CGPoint(x: 135 / 296 * rect.width, y: 86 / 292 * rect.height), radius: 20 / 296 * rect.width, startAngle: .zero, endAngle: .degrees(360), clockwise: false)
+            path.move(to: CGPoint(x: 100 / 296 * rect.width, y: 132 / 292 * rect.height))
+            path.addQuadCurve(to: CGPoint(x: 185 / 296 * rect.width, y: 125 / 292 * rect.height), control: CGPoint(x: 135 / 296 * rect.width, y: 70 / 292 * rect.height))
         }
     }
 }
@@ -62,10 +79,17 @@ struct Photo1: Shape{
     func path(in rect: CGRect) -> Path {
         Path{path in
             path.move(to: CGPoint(x: 90 / 296 * rect.width, y: 45 / 292 * rect.height))
+            path.addLine(to: CGPoint(x: 90 / 296 * rect.width, y: 42 / 292 * rect.height))
             path.addLine(to: CGPoint(x: 100 / 296 * rect.width, y: 132 / 292 * rect.height))
             path.addLine(to: CGPoint(x: 185 / 296 * rect.width, y: 125 / 292 * rect.height))
             path.addLine(to: CGPoint(x: 175 / 296 * rect.width, y: 38 / 292 * rect.height))
             path.addLine(to: CGPoint(x: 90 / 296 * rect.width, y: 45 / 292 * rect.height))
+            
+            path.move(to: CGPoint(x: 132.5 / 296 * rect.width, y: 41.5 / 292 * rect.height))
+            path.addLine(to: CGPoint(x: 95 / 296 * rect.width, y: 88.5 / 292 * rect.height))
+            
+            path.move(to: CGPoint(x: 132.5 / 296 * rect.width, y: 41.5 / 292 * rect.height))
+            path.addLine(to: CGPoint(x: 180 / 296 * rect.width, y: 81.5 / 292 * rect.height))
         }
     }
 }
@@ -247,6 +271,6 @@ struct Rock1: Shape{
 
 struct Tomb_Previews: PreviewProvider {
     static var previews: some View {
-        TombView(positionX: 180, positionY: 300, rotationDegrees: 0, scale: 1)
+        TombView(positionX: 180, positionY: 300, rotationDegrees: 0, scale: 2)
     }
 }
