@@ -9,8 +9,39 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack
+        {
+            //背景圖
+            Image("Background1")
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
+            
+            VStack(alignment: .leading, spacing: 10.0){
+                Text("往生堂會員優惠")
+                    .foregroundColor(.white)
+                    .font(.largeTitle)
+                
+                HStack(alignment: .bottom, spacing: 30.0){
+                    Text("第二碑半價")
+                        .foregroundColor(.white)
+                    
+                    Text("滿三碑送一碑")
+                        .foregroundColor(.white)
+                }
+                
+                Text("送禮自用兩相宜歐")
+                    .foregroundColor(.white)
+                    .font(.title)
+            }
+            .offset(x: -250, y: -100)
+            
+            //放上角色
+            HuTao(positionX: 700, positionY: 120, rotationDegrees: 0, scale: 0.5)
+            
+            //放上墳墓
+            TombView(positionX: 500, positionY: 250, rotationDegrees: 0, scale: 0.5)
+        }
     }
 }
 
