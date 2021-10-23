@@ -50,11 +50,12 @@ struct TombView: View {
                 .rotationEffect(.degrees(rotationDegrees))
             
             //遺照的位置
-            Object1()
-                .fill(Color(red: 252 / 255, green: 224 / 255, blue: 203 / 255))
-                .frame(width: 296 * scale, height: 292 * scale)
-                .position(x: positionX, y: positionY)
-                .rotationEffect(.degrees(rotationDegrees))
+            //遺照中的人
+//            Object1()
+//                .fill(Color(red: 252 / 255, green: 224 / 255, blue: 203 / 255))
+//                .frame(width: 296 * scale, height: 292 * scale)
+//                .position(x: positionX, y: positionY)
+//                .rotationEffect(.degrees(rotationDegrees))
             
             Photo1()
                 .stroke(Color(red: 0, green: 0, blue: 0), lineWidth: scale * 8)
@@ -271,6 +272,16 @@ struct Rock1: Shape{
 
 struct Tomb_Previews: PreviewProvider {
     static var previews: some View {
-        TombView(positionX: 180, positionY: 300, rotationDegrees: 0, scale: 2)
+        ZStack
+        {
+            TombView(positionX: 300, positionY: 500, rotationDegrees: 0, scale: 1)
+            
+        }
+    }
+}
+
+struct Tomb_LibraryContent: LibraryContentProvider {
+    var views: [LibraryItem] {
+        LibraryItem(TombView(scale: 1), title: "墳")
     }
 }

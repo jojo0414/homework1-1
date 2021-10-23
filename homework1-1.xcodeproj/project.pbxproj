@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB45F0522720673900A225E4 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB45F0512720673900A225E4 /* Car.swift */; };
 		EB461B97271F3B620026CA04 /* Tomb.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB461B96271F3B620026CA04 /* Tomb.swift */; };
 		EB461B9A271F6D310026CA04 /* Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB461B99271F6D300026CA04 /* Body.swift */; };
 		EB465362271BE3720087DD2F /* homework1_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB465361271BE3720087DD2F /* homework1_1App.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB45F0512720673900A225E4 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		EB461B96271F3B620026CA04 /* Tomb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tomb.swift; sourceTree = "<group>"; };
 		EB461B99271F6D300026CA04 /* Body.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Body.swift; sourceTree = "<group>"; };
 		EB46535E271BE3710087DD2F /* homework1-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "homework1-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +68,7 @@
 				EB461B96271F3B620026CA04 /* Tomb.swift */,
 				EB465361271BE3720087DD2F /* homework1_1App.swift */,
 				EB465363271BE3720087DD2F /* ContentView.swift */,
+				EB45F0512720673900A225E4 /* Car.swift */,
 				EB465377271DFBC50087DD2F /* HuTao.swift */,
 				EB465371271BE3B60087DD2F /* Hat.swift */,
 				EB465374271BE80E0087DD2F /* Head.swift */,
@@ -155,6 +158,7 @@
 			files = (
 				EB465372271BE3B60087DD2F /* Hat.swift in Sources */,
 				EB461B9A271F6D310026CA04 /* Body.swift in Sources */,
+				EB45F0522720673900A225E4 /* Car.swift in Sources */,
 				EB465378271DFBC50087DD2F /* HuTao.swift in Sources */,
 				EB465364271BE3720087DD2F /* ContentView.swift in Sources */,
 				EB461B97271F3B620026CA04 /* Tomb.swift in Sources */,

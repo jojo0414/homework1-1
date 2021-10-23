@@ -40,7 +40,10 @@ struct ContentView: View {
             HuTao(positionX: 700, positionY: 120, rotationDegrees: 0, scale: 0.5)
             
             //放上墳墓
-            TombView(positionX: 500, positionY: 250, rotationDegrees: 0, scale: 0.5)
+            TombView(positionX: 550, positionY: 250, rotationDegrees: 0, scale: 0.35)
+            TombView(positionX: 500, positionY: 280, rotationDegrees: 0, scale: 0.35)
+            ChocolateView(offsetX: 150, offsetY: 40, scale: 0.0605)
+            BiiView(offsetX: 100, offsetY: 70, scale: 0.0605)
         }
     }
 }

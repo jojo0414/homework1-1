@@ -28,3 +28,9 @@ struct HuTao_Previews: PreviewProvider {
         HuTao(positionX: 200, positionY: 250, rotationDegrees: 0, scale: 1)
     }
 }
+
+struct HuTao_LibraryContent: LibraryContentProvider {
+    var views: [LibraryItem] {
+        LibraryItem(HuTao(scale: 1), title: "胡桃")
+    }
+}

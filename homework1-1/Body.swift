@@ -112,6 +112,7 @@ struct BodyView: View{
                 
                 Socks2()
                     .fill(Color(red: 170 / 255, green: 73 / 255, blue: 59 / 255))
+//                    .fill(Color(red: 255 / 255, green: 217 / 255, blue: 230 / 255))
                     .frame(width: 148 * scale, height: 363 * scale)
                     .position(x: positionX, y: positionY)
                     .rotationEffect(.degrees(rotationDegrees))

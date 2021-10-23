@@ -439,6 +439,7 @@ struct FlowerView: View{
                 
                 Bud1()
                     .fill(Color(red: 160 / 255, green: 67 / 255, blue: 64 / 255))
+//                    .fill(Color(red: 255 / 255, green: 217 / 255, blue: 230 / 255))
                     .frame(width: 281 * scaleFlower, height: 175 * scaleFlower)
                     .position(x: positionX, y: positionY)
                     .rotationEffect(.degrees(rotationDegrees))
@@ -452,6 +453,7 @@ struct FlowerView: View{
                 
                 Bud2()
                     .fill(Color(red: 160 / 255, green: 67 / 255, blue: 64 / 255))
+//                    .fill(Color(red: 255 / 255, green: 217 / 255, blue: 230 / 255))
                     .frame(width: 281 * scaleFlower, height: 175 * scaleFlower)
                     .position(x: positionX, y: positionY)
                     .rotationEffect(.degrees(rotationDegrees))
@@ -465,6 +467,7 @@ struct FlowerView: View{
                 
                 Bud3()
                     .fill(Color(red: 160 / 255, green: 67 / 255, blue: 64 / 255))
+//                    .fill(Color(red: 255 / 255, green: 217 / 255, blue: 230 / 255))
                     .frame(width: 281 * scaleFlower, height: 175 * scaleFlower)
                     .position(x: positionX, y: positionY)
                     .rotationEffect(.degrees(rotationDegrees))
@@ -474,6 +477,7 @@ struct FlowerView: View{
             Group{
                 Flower()
                     .fill(Color(red: 170 / 255, green: 73 / 255, blue: 59 / 255))
+//                    .fill(Color(red: 255 / 255, green: 217 / 255, blue: 230 / 255))
                     .frame(width: 281 * scaleFlower, height: 175 * scaleFlower)
                     .rotationEffect(.degrees(60))
                     .position(x: positionX - 57 * scaleFlower, y: positionY + 20 * scaleFlower)
@@ -497,6 +501,7 @@ struct FlowerView: View{
             Group{
                 Flower()
                     .fill(Color(red: 170 / 255, green: 73 / 255, blue: 59 / 255))
+//                    .fill(Color(red: 255 / 255, green: 217 / 255, blue: 230 / 255))
                     .frame(width: 281 * scaleFlower, height: 175 * scaleFlower)
                     .rotationEffect(.degrees(-30))
                     .position(x: positionX - 4 * scaleFlower, y: positionY - 48 * scaleFlower)
@@ -520,6 +525,7 @@ struct FlowerView: View{
             Group{
                 Flower()
                     .fill(Color(red: 170 / 255, green: 73 / 255, blue: 59 / 255))
+//                    .fill(Color(red: 255 / 255, green: 217 / 255, blue: 230 / 255))
                     .frame(width: 281 * scaleFlower, height: 175 * scaleFlower)
                     .position(x: positionX + 1 * scaleFlower, y: positionY - 3 * scaleFlower)
                     .rotationEffect(.degrees(rotationDegrees))
@@ -541,6 +547,7 @@ struct FlowerView: View{
             Group{
                 Flower()
                     .fill(Color(red: 170 / 255, green: 73 / 255, blue: 59 / 255))
+//                    .fill(Color(red: 255 / 255, green: 217 / 255, blue: 230 / 255))
                     .frame(width: 281 * 0.8 * scaleFlower, height: 175 * 0.8 * scaleFlower)
                     .rotationEffect(.degrees(10))
                     .position(x: positionX + 10 * scaleFlower, y: positionY - 35 * scaleFlower)
